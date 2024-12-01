@@ -46,6 +46,8 @@ Rails.application.routes.draw do
           end
         end
       end
+
+      resources :pokemons, only: %i[index show]
     end
   end
 end
