@@ -4,5 +4,8 @@ class PokemonSerializer < ApplicationSerializer
           :height,
           :weight,
           :types,
-          :stats
+          :stats,
+          :abilities,
+          :image,
+          :background
 end

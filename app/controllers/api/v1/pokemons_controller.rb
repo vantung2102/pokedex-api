@@ -40,12 +40,15 @@ module API
       end
 
       def pokemon_details(pokemon)
-        {
+      {
           id: pokemon['id'],
           name: pokemon['name'],
           height: pokemon['height'],
           weight: pokemon['weight'],
           types: pokemon['types'].map { |type| type['type']['name'] },
+          abilities: pokemon['abilities'].map { |ability| ability['ability']['name'] },
+          image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/#{pokemon['id']}.gif",
+          background: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/#{pokemon['id']}.png"
           stats: pokemon['stats'].each_with_object({}) do |stat, memo|
             memo[stat['stat']['name']] = stat['base_stat']
           end
