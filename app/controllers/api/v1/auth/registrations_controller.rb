@@ -2,7 +2,6 @@ module API
   module V1
     module Auth
       class RegistrationsController < Devise::RegistrationsController
-
         private
 
         def sign_up_params

@@ -2,7 +2,6 @@ module API
   module V1
     module Auth
       class SessionsController < Devise::SessionsController
-
         private
 
         def sign_in_params
