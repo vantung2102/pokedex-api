@@ -188,7 +188,7 @@ GEM
       childprocess (~> 5.0)
     letter_opener (1.10.0)
       launchy (>= 2.2, < 4)
-    logger (1.6.1)
+    logger (1.6.3)
     lograge (0.14.0)
       actionpack (>= 4)
       activesupport (>= 4)
@@ -301,7 +301,7 @@ GEM
     rake (13.2.1)
     rdoc (6.8.1)
       psych (>= 4.0.0)
-    redis-client (0.22.2)
+    redis-client (0.23.0)
       connection_pool
     regexp_parser (2.9.2)
     reline (0.5.12)
@@ -363,7 +363,7 @@ GEM
       ffi (~> 1.12)
       logger
     securerandom (0.3.2)
-    sidekiq (7.3.6)
+    sidekiq (7.3.7)
       connection_pool (>= 2.3.0)
       logger
       rack (>= 2.2.4)
